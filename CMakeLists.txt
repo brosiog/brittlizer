@@ -54,10 +54,13 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     juce::juce_recommended_lto_flags
     juce::juce_recommended_warning_flags)
 
+# ── Generate JuceHeader.h (explicit in JUCE 8) ────────────────────────────────
+juce_generate_juce_header(${PROJECT_NAME})
+
 # ── Sources ───────────────────────────────────────────────────────────────────
 add_subdirectory(Source)
 
 # ── Universal Binary ──────────────────────────────────────────────────────────
 set_target_properties(${PROJECT_NAME} PROPERTIES
     XCODE_ATTRIBUTE_ARCHS "arm64 x86_64"
-    XCODE_ATTRIBUTE_MACOSX_DEPLOYMENT_TARGET "11.0")
+    XCODE_ATTRIBUTE_MACOSX_DEPLOYMENT_TARGET "12.0")

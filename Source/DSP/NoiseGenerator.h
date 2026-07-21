@@ -47,8 +47,8 @@ public:
         reset();
 
         // Pre-allocate buffer for crackle sample-and-hold
-        crackleState.resize ((size_t) juce::nextPowerOfTwo (
-            static_cast<int> (spec.maximumBlockSize)), false);
+        crackleState.resize ((int) juce::nextPowerOfTwo (
+            static_cast<int> (spec.maximumBlockSize)));
     }
 
     void reset()

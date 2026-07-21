@@ -16,7 +16,7 @@ echo ""
 
 cmake -B "${BUILD_DIR}" -G Xcode \
     -DCMAKE_OSX_ARCHITECTURES="arm64;x86_64" \
-    -DCMAKE_OSX_DEPLOYMENT_TARGET=11.0 \
+    -DCMAKE_OSX_DEPLOYMENT_TARGET=12.0 \
     "$(dirname "$0")/.."
 
 cmake --build "${BUILD_DIR}" --config "${BUILD_TYPE}" "$@"

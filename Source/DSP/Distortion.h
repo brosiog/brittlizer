@@ -49,7 +49,7 @@ public:
 
     void reset()
     {
-        for (auto* os : oversamplers)
+        for (auto& os : oversamplers)
             if (os != nullptr)
                 os->reset();
 

@@ -130,8 +130,9 @@ public:
         {
             for (int ch = 0; ch < juce::jmin (numChannels, (int) svfFilters.size()); ++ch)
             {
-                auto* data = buffer.getWritePointer (ch);
-                svfFilters[(size_t) ch].process (data, numSamples);
+                auto block = juce::dsp::AudioBlock<float> (buffer).getSubBlock ((size_t) ch);
+                juce::dsp::ProcessContextReplacing<float> context (block);
+                svfFilters[(size_t) ch].process (context);
             }
         }
 

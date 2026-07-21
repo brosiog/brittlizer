@@ -91,21 +91,21 @@ namespace ParamID
 namespace ParamRange
 {
     // Int-like: min, max, step
-    inline constexpr auto bitDepth       = juce::NormalisableRange<float>(1.0f,   32.0f,   1.0f);
+    inline auto bitDepth       = juce::NormalisableRange<float>(1.0f,   32.0f,   1.0f);
 
     // Float
-    inline constexpr auto sampRate       = juce::NormalisableRange<float>(100.0f, 48000.0f, 1.0f);
-    inline constexpr auto distDrive      = juce::NormalisableRange<float>(0.0f,   10.0f,   0.01f);
-    inline constexpr auto distThreshold  = juce::NormalisableRange<float>(0.01f,  1.0f,    0.001f);
-    inline constexpr auto noiseLevel     = juce::NormalisableRange<float>(0.0f,   1.0f,    0.001f);
-    inline constexpr auto popRate        = juce::NormalisableRange<float>(0.0f,   10.0f,   0.1f);
-    inline constexpr auto popIntensity   = juce::NormalisableRange<float>(0.0f,   1.0f,    0.001f);
-    inline constexpr auto filterFreq     = juce::NormalisableRange<float>(20.0f,  20000.0f, 1.0f);
-    inline constexpr auto filterQ        = juce::NormalisableRange<float>(0.1f,   10.0f,   0.01f);
-    inline constexpr auto mix            = juce::NormalisableRange<float>(0.0f,   1.0f,    0.001f);
+    inline auto sampRate       = juce::NormalisableRange<float>(100.0f, 48000.0f, 1.0f);
+    inline auto distDrive      = juce::NormalisableRange<float>(0.0f,   10.0f,   0.01f);
+    inline auto distThreshold  = juce::NormalisableRange<float>(0.01f,  1.0f,    0.001f);
+    inline auto noiseLevel     = juce::NormalisableRange<float>(0.0f,   1.0f,    0.001f);
+    inline auto popRate        = juce::NormalisableRange<float>(0.0f,   10.0f,   0.1f);
+    inline auto popIntensity   = juce::NormalisableRange<float>(0.0f,   1.0f,    0.001f);
+    inline auto filterFreq     = juce::NormalisableRange<float>(20.0f,  20000.0f, 1.0f);
+    inline auto filterQ        = juce::NormalisableRange<float>(0.1f,   10.0f,   0.01f);
+    inline auto mix            = juce::NormalisableRange<float>(0.0f,   1.0f,    0.001f);
 
     // Output gain in dB: -24 to +24 in 0.1 dB steps (common for plugin gain)
-    inline constexpr auto outputGain     = juce::NormalisableRange<float>(-24.0f, 24.0f,   0.1f);
+    inline auto outputGain     = juce::NormalisableRange<float>(-24.0f, 24.0f,   0.1f);
 }
 
 // ══════════════════════════════════════════════════════════════════════════════
