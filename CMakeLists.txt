@@ -20,12 +20,13 @@ FetchContent_MakeAvailable(juce)
 
 # ── Plugin Target ─────────────────────────────────────────────────────────────
 juce_add_plugin(${PROJECT_NAME}
-    PRODUCT_NAME             "BrittLizer"
+    PRODUCT_NAME             "Carmy BrittLizer"
     FORMATS                  AU VST3 Standalone
-    COMPANY_NAME             "Brosio Audio"
+    COMPANY_NAME             "Carmy Code"
+    BUNDLE_ID                "com.carmycode.brittlizer"
     COMPANY_WEBSITE          "https://ambrosiogomez.com"
     COMPANY_EMAIL            "brosio@example.com"
-    PLUGIN_MANUFACTURER_CODE BrAo
+    PLUGIN_MANUFACTURER_CODE CaCo
     PLUGIN_CODE              BrLz
     AU_MAIN_TYPE             kAudioUnitType_Effect
     VST3_CATEGORIES          "Fx|Distortion|Dynamics"
@@ -38,8 +39,6 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
     JUCE_VST3_CAN_REPLACE_VST2=0
-    JucePlugin_ManufacturerCode=0x4272416F   # 'BrAo'
-    JucePlugin_PluginCode=0x42724C7A         # 'BrLz'
 )
 
 target_compile_features(${PROJECT_NAME} PUBLIC cxx_std_17)

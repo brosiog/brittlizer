@@ -37,7 +37,7 @@ public:
     bool                        hasEditor()   const override { return true; }
 
     //==============================================================================
-    const juce::String getName() const override { return "BrittLizer"; }
+    const juce::String getName() const override { return "Carmy BrittLizer"; }
 
     bool acceptsMidi() const override { return false; }
     bool producesMidi() const override { return false; }

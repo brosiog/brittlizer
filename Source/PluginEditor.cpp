@@ -53,7 +53,7 @@ BrittLizerAudioProcessorEditor::BrittLizerAudioProcessorEditor (BrittLizerAudioP
     : AudioProcessorEditor (&p), processorRef (p)
 {
     // ── Title ────────────────────────────────────────────────────────────────
-    titleLabel.setText ("BRITTLIZER", juce::dontSendNotification);
+    titleLabel.setText ("CARMY BRITTLIZER", juce::dontSendNotification);
     titleLabel.setFont (juce::Font (28.0f, juce::Font::bold));
     titleLabel.setJustificationType (juce::Justification::centred);
     titleLabel.setColour (juce::Label::textColourId, juce::Colours::orangered);
